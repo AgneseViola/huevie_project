@@ -1,0 +1,120 @@
+<!---1. Sono presenti, ai vertici di un quadrato immaginario
+centrato nella pagina, quattro quadrati di colori diversi  (1pt)
+2. Cliccando sul quadrato in alto a sinistra, i due quadrati in alto
+si scambiano posizione (1pt)
+3. Cliccando sul quadrato in alto a destra (dopo lo scambio, cioè quello che
+prima era in alto a sinistra), i quadrati cominciano a girare in tondo,
+intorno centro dello schermo, al ritmo di un giro al secondo 1pt
+4. Passando il mouse su uno qualsiasi dei quadrati, questi si fermano (2pt)
+------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>FOUR SQUARES</title>
+  <script src="jquery.min.js"></script>
+
+   <style>
+
+    .q_big {
+      width: 20vw;
+      height: 20vw;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top:50%;
+      left: 50%;
+
+    }
+
+    .q1 {
+      background-color: #034748;
+      width: 5vw;
+      height: 5vw;
+      margin-left: 0;
+    }
+
+    .q2 {
+      background-color: #1481BA;
+      width: 5vw;
+      height: 5vw;
+      margin-left: 15vw;
+      margin-top: -5vw;
+    }
+
+    .q3 {
+      background-color: #58C8E8;
+      width: 5vw;
+      height: 5vw;
+      margin-top: 10vw;
+    }
+
+    .q4 {
+      background-color: #0CAADC;
+      width: 5vw;
+      height: 5vw;
+      margin-left: 15vw;
+      margin-top: -5vw;
+    }
+
+    @keyframes trasl_1 {
+      from {margin-left: 0;}
+      to {margin-left: 15vw};
+    }
+    .trasl_1 {
+      animation: trasl_1 1s forwards;
+    }
+
+    @keyframes trasl_2 {
+      from {margin-left: 15vw;}
+      to {margin-left: 0vw};
+    }
+    .trasl_2 {
+      animation: trasl_2 1s forwards;
+    }
+
+    @keyframes spin_qbig {
+      from {transform: translate(-50%, -50%) rotate(0);}
+      to {transform: translate(-50%, -50%) rotate(360deg);}
+    }
+    .spin_qbig {
+      animation: spin_qbig 1s infinite linear;
+    }
+
+
+
+
+   </style>
+</head>
+
+<body>
+  <div class="q_big">
+    <div class="q1"></div>
+    <div class="q2"></div>
+    <div class="q3"></div>
+    <div class="q4"></div>
+  </div>
+
+</body>
+
+<script>
+var c=0;
+$(".q1").click(function () {
+  if (c==0) {
+  $(".q1").addClass("trasl_1");
+  $(".q2").addClass("trasl_2");
+  c=1; }
+
+else if (c==1) {
+  $(".q_big").addClass("spin_qbig");
+  c=2; }
+
+});
+
+$(this).mouseover(function () {
+  $(".q_big").removeClass("spin_qbig");
+});
+
+
+
+</script>
+</html>

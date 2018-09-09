@@ -1,0 +1,99 @@
+
+body {
+  background-color: #FCFFF4;
+}
+
+.text {
+  position: absolute;
+  top:-2.5vh;
+  left:4vw;
+  right:0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  color: #222;
+  text-align: left;
+  padding-right: 20vw;
+  line-height: 1;
+}
+
+
+.photo_grid_item{
+  background-color: black;
+  cursor: pointer;
+}
+
+.photo_back{
+  position: fixed;
+  background-color: black;
+  opacity: 1;
+  width: 100vw;
+  height: 600vh;
+}
+
+.photo_back img{
+  max-width: 100vw;
+  max-height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.hide{
+  display: none;
+}
+
+.see_it{
+  position: fixed;
+  top: 0;
+}
+
+
+.photo_grid{
+   padding: 20px;
+   height: 60vh;
+   width: 80%;
+   display: flex;
+   margin-top: 33%;
+   margin-left: 65%;
+   transform: translate(-50%, -50%);
+ }
+
+ .column{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 33%;
+ }
+
+ .photo_grid_item{
+   margin: 10%;
+   height: 96%;
+   width: 58%;
+   overflow: hidden;
+   padding: 0;
+   border: 7px solid #222;
+ }
+
+ .landscape{
+   max-height: 100%;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .portrait{
+   max-width: 100%;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+
+ .photo_grid_item img:hover{
+   opacity: 0.5;
+   transition: 0.5s;
+ }

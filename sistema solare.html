@@ -1,0 +1,130 @@
+<<!DOCTYPE html>
+<html lang="en" class="lrt">
+	<head>
+    <meta charset="utf-8">
+		<title>SOLAR SYSTEM</title>
+		<script src="jquery.min.js"></script>
+		<style media="screen"> </style>
+		<style>
+
+			body {
+				background-color: #000526;
+			}
+
+			.cornice1 {
+				width: 250px;
+				height: 250px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				}
+
+				.blu {
+					border-radius: 50%;
+					background-color: #007E9E;
+					width: 25px;
+					height: 25px;
+				}
+
+				.cornice2 {
+					width: 350px;
+					height: 350px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					}
+
+					.rosso {
+						border-radius: 50%;
+						background-color: #B5343F;
+						width: 25px;
+						height: 25px;
+					}
+
+					.hidden {
+						display: none;
+					}
+
+					.stella{
+						border-radius: 50%;
+						background-color: #FFF2A0;
+						width: 50px;
+						height: 50px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+
+					@keyframes spin_blu {
+					from {transform: translate(-50%, -50%) rotate(0);}
+					to {transform: translate(-50%, -50%) rotate(360deg);}
+					}
+
+					.spin_blu {
+						animation: spin_blu 2s infinite linear;
+					}
+
+					@keyframes spin_red {
+					from {transform: translate(-50%, -50%) rotate(0);}
+					to {transform: translate(-50%, -50%) rotate(-360deg);}
+					}
+
+					.spin_red {
+						animation: spin_red 4s infinite linear;
+					}
+
+					@keyframes spin_blu_invert {
+					from {transform: translate(-50%, -50%) rotate(0);}
+					to {transform: translate(-50%, -50%) rotate(-360deg);}
+					}
+
+					.spin_blu_invert {
+						animation: spin_blu_invert 2s infinite linear;
+					}
+
+					@keyframes spin_red_invert {
+					from {transform: translate(-50%, -50%) rotate(0);}
+					to {transform: translate(-50%, -50%) rotate(360deg);}
+					}
+
+					.spin_red_invert {
+						animation: spin_red_invert 4s infinite linear;
+					}
+		</style>
+	</head>
+<body>
+	<div class="cornice1">
+		<div class="blu"></div>
+	</div>
+	<div class="cornice2">
+		<div class="rosso hidden"></div>
+	</div>
+	<div class="hidden"></div>
+	<div class="stella"></div>
+</body>
+<script>
+var c=0;
+ $(".stella").on("click", function() {
+	if(c==0)
+	{
+		$(".cornice1").addClass("spin_blu");
+		c=1;
+	}
+	else if (c==1) {
+		$(".rosso").removeClass("hidden");
+		$(".cornice2").addClass("spin_red");
+		c=2;
+	}
+	else if (c==2) {
+		$(".cornice1").removeClass("spin_blu");
+		$(".cornice1").addClass("spin_blu_invert");
+		$(".cornice2").removeClass("spin_red");
+		$(".cornice2").addClass("spin_red_invert");
+		c=3;
+	}
+});
+
+</script>

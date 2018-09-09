@@ -1,0 +1,121 @@
+<!--1. Al centro è presente un quadrato verde (1pt)
+2. Cliccando sul quadrato verde, questo esce dal lato destro dello schermo,
+ed entra un cerchio blu (1pt)
+3. Cliccando sul cerchio blu, questo si trasforma in quadrato, e cambia
+colore (diventa rosso) 1pt
+4. Cliccando sul quadrato rosso, questo comincia a girare, al ritmo
+di 1 giro/secondo (2pt)
+5. Cliccando di nuovo sul quadrato rosso, questo esce dallo schermo,
+e ricompare il quadrato verde  (2pt)
+----------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title> GREEN SQUARE </title>
+  <script src="jquery.min.js"></script>
+
+   <style>
+
+
+  .q_verde {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 17vw;
+    height: 17vw;
+    background-color: #D1F5BE;
+  }
+
+  .object {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 110%;
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .quadratored {
+    border-radius: 0%;
+    background-color: #E0463E;
+    transition: 1s;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+  }
+
+  .cerchio {
+    border-radius: 50%;
+    background-color: #1B4A5B;
+  }
+
+
+@keyframes uscita {
+  from {left: 50%;}
+  to {left: 110%};
+}
+  .uscita {
+    animation: uscita 2s forwards;
+  }
+
+  @keyframes entrata {
+    from {left: 110%;}
+    to {left: 50%};
+  }
+
+  .entrata {
+    animation: entrata 2s forwards;
+  }
+
+  @keyframes spin_qred {
+    from {transform: translate(-50%, -50%) rotate(0);}
+    to {transform: translate(-50%, -50%) rotate(360deg);}
+  }
+  .spin_qred {
+    animation: spin_qred 1s infinite linear;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="q_verde"></div>
+<div class="object"></div>
+
+</body>
+
+<script>
+var c=0;
+$(".q_verde").click(function(){
+  if (c==0) {
+  $(".q_verde").addClass("uscita");
+  $(".object").addClass("entrata cerchio");
+  c=1; }
+});
+
+$(".object").click(function(){
+  if (c==1) {
+  $(".object").addClass("quadratored");
+  $(".object").removeClass("cerchio");
+  c=2;
+}
+
+});
+
+$(".object").click(function(){
+  if (c==2) {
+  $(".object").addClass("spin_qred");
+  c=3;
+}
+
+});
+
+</script>
+</html>
