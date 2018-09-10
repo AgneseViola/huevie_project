@@ -7,19 +7,17 @@ body {
 }
 
 .content {
-  position: fixed;
-  top:0.9vh;
-  left:2.8vw;
+  top:0.9%;
+  left:2.8%;
   right:0;
-  bottom:0;
-  margin: auto;
+  margin-bottom: 0.9%;
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
   font-size: 56px;
   color: #222;
   position: relative;
   text-align: left;
-  padding-right: 20vw;
+  padding-right: 20%;
   line-height: 0.2;
 }
 
@@ -31,46 +29,47 @@ body {
   font-weight: 800;
   font-size: 100%;
   color: #222;
-  top: -8vh;
+  top: 1%;
+  bottom: 199%;
 }
 
 #intro {
   font-size: 110%;
   position: relative;
   text-align: center;
-  padding: 15px;
+  padding: 1.1%;
   line-height: 0.2;
-  left:47vw;
+  left:47%;
   right:0;
   bottom:0;
   margin: auto;
-  border: 0.4vh solid black;
+  border: 4px solid black;
 }
 
 #galleries {
   font-size: 110%;
   position: relative;
   text-align: left;
-  padding: 15px;
+  padding: 1.1%;
   line-height: 0.2;
-  left:48vw;
+  left:48%;
   right:0;
   bottom:0;
   margin: auto;
-  border: 0.4vh solid black;
+  border: 4px solid black;
 }
 
 #asocials {
   font-size: 110%;
   position: relative;
   text-align: left;
-  padding: 15px;
+  padding: 1.1%;
   line-height: 0.2;
-  left:49vw;
+  left:49%;
   right:0;
   bottom:0;
   margin: auto;
-  border: 0.4vh solid black;
+  border: 4px solid black;
 }
 
 @keyframes hover {
@@ -79,8 +78,8 @@ to {background: #222; color: #FCFFF4; }
 }
 #facts{
   position: relative;
-  top:-50vh;
-  left: 0vw;
+  top:-50%;
+  left: 0%;
 }
 #intro:hover {
   background: #222; color: #FCFFF4;
@@ -119,25 +118,25 @@ to {background: #222; color: #FCFFF4; }
   }
 
 .me_logo img {
-width: 25vw;
+width: 25%;
 height: auto;
 position: absolute;
-top:-2vh;
-left:75vw;
-right:19.5vw;
+top:-2%;
+left:74.6%;
+right:20%;
 bottom: auto;
-padding-left:5px;
-padding-right: 5px;
+padding-left:0.5%;
+padding-right: 0.5%;
 padding-top: 0;
-padding-bottom: 10px;
+padding-bottom: 1%;
 overflow: hidden;
 }
 
 .text {
   position: relative;
-  top:5%;
+  top:-2%;
   left:0;
-  right:30vw;
+  right:30%;
   bottom:0;
   margin: auto;
   font-family: sans-serif;
@@ -146,9 +145,9 @@ overflow: hidden;
   color: #222;
   position: relative;
   text-align: right;
-  margin-right: 25vw;
-  margin-left: 20px;
-  margin-bottom: 1px;
+  margin-right: 25%;
+  margin-left: 2%;
+  margin-bottom: 0.1%;
   line-height: 1.20;
   overflow: hidden;
 }
@@ -160,9 +159,9 @@ overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
   color: #222;
-  top: 35%;
-  right: 4.7vw;
-  padding: 10px;
+  top: 34.5%;
+  right: 4.7%;
+  padding: 1%;
 }
 
 .box_text ul li {
@@ -172,13 +171,13 @@ overflow: hidden;
 }
 
 #f_1 {
-margin-bottom: 14px;
+margin-bottom: 1.4%;
 font-family:  'Oswald', sans-serif;
 font-weight: 400;
 text-align: left;
-left: 74vw;
+left: 75.5%;
 right: auto;
-top:5%;
+top:-20%;
 bottom:auto;
 position:relative;
 
@@ -189,9 +188,9 @@ position:relative;
   font-family:  'Oswald', sans-serif;
   font-weight: 400;
   text-align: left;
-  left: 74vw;
+  left: 75.5%;
   right: auto;
-  top:5%;
+  top:-20%;
   bottom:auto;
   position:relative;
 }
@@ -201,7 +200,7 @@ position:relative;
   font-family:  'Oswald', sans-serif;
   font-weight: 400;
   text-align: left;
-  left: 74vw;
+  left: 75.5%;
   right: auto;
   top:5%;
   bottom:auto;
@@ -213,7 +212,7 @@ position:relative;
   font-family:  'Oswald', sans-serif;
   font-weight: 400;
   text-align: left;
-  left: 74vw;
+  left: 75.5%;
   right: auto;
   top:5%;
   bottom:auto;
@@ -224,7 +223,7 @@ position:relative;
   font-family:  'Oswald', sans-serif;
   font-weight: 400;
   text-align: left;
-  left: 74vw;
+  left: 75.5%;
   right: auto;
   top:5%;
   bottom:auto;
@@ -235,7 +234,7 @@ position:relative;
     font-family:  'Oswald', sans-serif;
     font-weight: 400;
     text-align: left;
-    left: 74vw;
+    left: 75.5%;
     right: auto;
     top:5%;
     bottom:auto;
@@ -252,100 +251,99 @@ position:relative;
 
 #ContainerBorderL {
    width: 7px;
-   height: calc(200% - 13px);
-   top: 13px;
-   left: 13px;
-   bottom: 13px;
+   height: calc(200% - 3.8%);
+   top: 1.3%;
+   left: 1%;
+   bottom: 1.3%;
 }
 
 #ContainerBorderR {
    width: 7px;
-   height: calc(200% - 1.15vh);
-   top: 13px;
-   right: 13px;
+   height: calc(200% - 4%);
+   top: 2%;
+   right: 1.3%;
 }
 
 #ContainerBorderT {
-   width: calc(100% - 2.3vw);
+   width: calc(100% - 2.3%);
    height: 7px;
-   left: 13px;
-   top: 13px;
+   left: 1%;
+   top: 1.3%;
 }
 
 #ContainerBorderB {
-   width: calc(100% - 2.3vw);
+   width: calc(100% - 2.3%);
    height: 7px;
-   left: 13px;
-   bottom: 13px;
-   top: calc(200% - 26px);
-   margin-bottom: 13px;
+   left: 1%;
+   bottom: 1.3%;
+   top: calc(200% - 2.6%);
+   margin-bottom: 1.3%
 }
 
 #InnerBorderR {
   width: 7px;
-  height: 109vh;
-  top: 13px;
-  left: 76.5vw;
+  height: 109%;
+  top: 1.3%;
+  left: 76.5%;
   position: absolute;
 }
 
 #InnerBorderR_1 {
   width: 7px;
-  height: 50vh;
-  top: 110vh;
-  left: 40vw;
+  height: 50%;
+  top: 110%;
+  left: 40%;
   position: absolute;
 
 }
 
 #InnerBorderT {
-  width: calc(100vw - 24vw);
+  width: calc(100vw - 24.5%);
   height: 7px;
-  left: 13px;
-  right: 80vw;
-  top: 120px;
+  left: 1.3%;
+  right: 80%;
+  top: 12%;
   position: absolute;
 }
 
 
 #InnerBorderT_1 {
-  width: 22.2vw;
+  width: 22.2%;
   height: 7px;
-  left: 76.5vw;
-  right: 13px;
+  left: 76.5%;
+  right: 1.3%;
   top: 35.5%;
   position: absolute;
 }
 
 #InnerBorderT_2 {
-  width: 22.2vw;
+  width: 22.2%;
   height: 7px;
-  left: 76.5vw;
-  right: 13px;
+  left: 76.5%;
+  right: 1.3%;
   top: 43.5%;
   position: absolute;
 
 }
 
 #InnerBorderT_3 {
-  width: calc(100vw - 26px);
+  width: calc(100vw - 2.7%);
   height: 7px;
-  left: 13px;
-  right: 13px;
-  top: 110vh;
+  left: 1.3%;
+  right: 1.3%;
+  top: 110%;
   position: absolute;
-
 }
 
 #InnerBorderT_4 {
-  width: calc(100vw - 26px);
+  width: calc(100vw - 2.7%);
   height: 7px;
-  left: 13px;
-  right: 13px;
-  top: 160vh;
+  left: 1.3%;
+  right: 1.3%;
+  top: 160%;
   position: absolute;
-
 }
+
 
 
 #galleries_1 {
@@ -354,8 +352,8 @@ position:relative;
   font-weight: 800;
   font-size: 40px;
   color: #222;
-  top: 103vh;
-  left: 39px;
+  top: 104%;
+  left: 3%;
 }
 
 #exercises {
@@ -364,16 +362,16 @@ position:relative;
   font-weight: 800;
   font-size: 40px;
   color: #222;
-  top:103vh;
-  left: 42vw;
+  top:104%;
+  left: 42%;
 }
 
   #link_1 {
     position: relative;
     text-align: right;
     font-size: 38px;
-    top:0vh;
-    left: -37vw;
+    top:0%;
+    left: -37%;
     font-family: sans-serif;
     font-weight: 800;
    }
@@ -382,7 +380,7 @@ position:relative;
     text-align: right;
     font-size: 38px;
     top:3%;
-    left: -37vw;
+    left: -37%;
     font-family: sans-serif;
     font-weight: 800;
     }
@@ -391,7 +389,7 @@ position:relative;
     text-align: right;
     font-size: 38px;
     top:5%;
-    left: -37vw;
+    left: -37%;
     font-family: sans-serif;
     font-weight: 800;
     }
@@ -423,8 +421,8 @@ position:relative;
   #ex_1 {
     text-align: right;
     font-size: 38px;
-    top:-20vh;
-    left: 21vw;
+    top:-20%;
+    left: 21%;
     font-family: sans-serif;
     font-weight: 800;
   }
@@ -432,8 +430,8 @@ position:relative;
   #ex_2 {
     text-align: right;
     font-size: 38px;
-    top:-20vh;
-    left: 21vw;
+    top:-20%;
+    left: 21%;
     font-family: sans-serif;
     font-weight: 800;
   }
@@ -441,8 +439,8 @@ position:relative;
   #ex_3 {
     text-align: right;
     font-size: 38px;
-    top:-20vh;
-    left: 21vw;
+    top:-20%;
+    left: 21%;
     font-family: sans-serif;
     font-weight: 800;
   }
@@ -450,8 +448,8 @@ position:relative;
   #ex_4 {
     text-align: right;
     font-size: 38px;
-    top:-20vh;
-    left: 21vw;
+    top:-20%;
+    left: 21%;
     font-family: sans-serif;
     font-weight: 800;
   }
@@ -488,7 +486,7 @@ position:relative;
     font-weight: 800;
     font-size: 40px;
     color: #222;
-    top: 173vh;
+    top: 173%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -500,25 +498,25 @@ position:relative;
   width:35%;
   height: 5%;
   transform: translate(-50%, -50%);
-  left: 51.2%;
+  left: 55.2%;
   top: 185%;
-  bottom: 28%
+  bottom: 29%
   border 2px solid gray;
 }
 
 .fa {
-    padding: 10px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 2.8%;
+    padding-top: 3.7%;
+    padding-bottom: 3.7%;
     font-size: 80px;
     font-weight: bolder;
-    width: 5vh;
+    width: 5%;
     height: auto;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 1%;
+    margin-left: 1.5%;
     background: #FCFFF4;
     color: #222;
     border: 4px solid #222;
