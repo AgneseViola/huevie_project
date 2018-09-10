@@ -53,10 +53,10 @@ body {
 .photo_grid{
    padding: 20px;
    height: 60vh;
-   width: 80%;
+   width: 90%;
    display: flex;
-   margin-top: 33%;
-   margin-left: 65%;
+   margin-top: 43%;
+   margin-left: 58%;
    transform: translate(-50%, -50%);
  }
 
