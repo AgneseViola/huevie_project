@@ -5,7 +5,7 @@ body {
 
 .text {
   position: absolute;
-  top:-2.5vh;
+  top:-2.5%;
   left:4vw;
   right:0;
   font-family: 'Oswald', sans-serif;
@@ -13,19 +13,19 @@ body {
   font-size: 50px;
   color: #222;
   text-align: left;
-  padding-right: 20vw;
+  padding-right: 20%;
   line-height: 1;
 }
 
 
 .photo_grid_item{
-  background-color: black;
+  background-color: #222;
   cursor: pointer;
 }
 
 .photo_back{
   position: fixed;
-  background-color: black;
+  background-color: #222;
   opacity: 1;
   width: 100vw;
   height: 600vh;
@@ -69,8 +69,8 @@ body {
 
  .photo_grid_item{
    margin: 10%;
-   height: 96%;
-   width: 58%;
+   height: 35%;
+   width: 70%;
    overflow: hidden;
    padding: 0;
    border: 7px solid #222;
