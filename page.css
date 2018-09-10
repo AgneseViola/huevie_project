@@ -370,7 +370,7 @@ position:relative;
     position: relative;
     text-align: right;
     font-size: 38px;
-    top:0%;
+    top:-43px;
     left: -37%;
     font-family: sans-serif;
     font-weight: 800;
@@ -379,7 +379,7 @@ position:relative;
   #link_2 {
     text-align: right;
     font-size: 38px;
-    top:3%;
+    top:-41px;
     left: -37%;
     font-family: sans-serif;
     font-weight: 800;
@@ -388,7 +388,7 @@ position:relative;
   #link_3 {
     text-align: right;
     font-size: 38px;
-    top:5%;
+    top:-39px;
     left: -37%;
     font-family: sans-serif;
     font-weight: 800;
@@ -421,7 +421,7 @@ position:relative;
   #ex_1 {
     text-align: right;
     font-size: 38px;
-    top:-20%;
+    top:-20vh;
     left: 21%;
     font-family: sans-serif;
     font-weight: 800;
@@ -430,7 +430,7 @@ position:relative;
   #ex_2 {
     text-align: right;
     font-size: 38px;
-    top:-20%;
+    top:-20vh;
     left: 21%;
     font-family: sans-serif;
     font-weight: 800;
@@ -439,7 +439,7 @@ position:relative;
   #ex_3 {
     text-align: right;
     font-size: 38px;
-    top:-20%;
+    top:-20vh;
     left: 21%;
     font-family: sans-serif;
     font-weight: 800;
@@ -448,7 +448,7 @@ position:relative;
   #ex_4 {
     text-align: right;
     font-size: 38px;
-    top:-20%;
+    top:-20vh;
     left: 21%;
     font-family: sans-serif;
     font-weight: 800;
