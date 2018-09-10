@@ -77,7 +77,11 @@ body {
 from {background: #FCFFF4; color: #222;}
 to {background: #222; color: #FCFFF4; }
 }
-
+#facts{
+  position: relative;
+  top:-50vh;
+  left: 0vw;
+}
 #intro:hover {
   background: #222; color: #FCFFF4;
 }
@@ -368,7 +372,7 @@ position:relative;
     position: relative;
     text-align: right;
     font-size: 38px;
-    top:1%;
+    top:0vh;
     left: -37vw;
     font-family: sans-serif;
     font-weight: 800;
@@ -419,7 +423,7 @@ position:relative;
   #ex_1 {
     text-align: right;
     font-size: 38px;
-    top:-6%;
+    top:-20vh;
     left: 21vw;
     font-family: sans-serif;
     font-weight: 800;
@@ -428,7 +432,7 @@ position:relative;
   #ex_2 {
     text-align: right;
     font-size: 38px;
-    top:-1%;
+    top:-20vh;
     left: 21vw;
     font-family: sans-serif;
     font-weight: 800;
@@ -437,7 +441,7 @@ position:relative;
   #ex_3 {
     text-align: right;
     font-size: 38px;
-    top:1%;
+    top:-20vh;
     left: 21vw;
     font-family: sans-serif;
     font-weight: 800;
@@ -446,7 +450,7 @@ position:relative;
   #ex_4 {
     text-align: right;
     font-size: 38px;
-    top:3%;
+    top:-20vh;
     left: 21vw;
     font-family: sans-serif;
     font-weight: 800;
