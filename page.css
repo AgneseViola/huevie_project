@@ -29,13 +29,13 @@ body {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
-  font-size: 1.000em;
+  font-size: 100%;
   color: #222;
-  top: -9.8vh;
+  top: 5%;
 }
 
 #intro {
-  font-size: 18px;
+  font-size: 150%;
   position: relative;
   text-align: center;
   padding: 15px;
@@ -48,7 +48,7 @@ body {
 }
 
 #galleries {
-  font-size: 18px;
+  font-size: 150%;
   position: relative;
   text-align: left;
   padding: 15px;
@@ -61,7 +61,7 @@ body {
 }
 
 #asocials {
-  font-size: 18px;
+  font-size: 150%;
   position: relative;
   text-align: left;
   padding: 15px;
